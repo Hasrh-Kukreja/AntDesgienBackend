@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 import express from 'express';
 import bodyParser from 'body-parser';
 import cors from 'cors';
@@ -17,7 +18,7 @@ app.use(bodyParser.json());
 app.use(cors());
 
 app.listen(PORT, () => {
-  console.log(`Server is running on port ${PORT}`);
+ console.log(`Server is running on port ${PORT}`);
 });
 
 app.post('/register', async (req, res) => {

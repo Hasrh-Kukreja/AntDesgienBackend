@@ -9,3 +9,7 @@ model login {
   password String
 }
 
+generator client {
+  provider = "prisma-client-js"
+}
+
